@@ -1,0 +1,422 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun  7 11:52:08 2021
+# Process ID: 5932
+# Current directory: D:/8190884/lab3_plis/project_2_plis.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: D:/8190884/lab3_plis/project_2_plis.runs/synth_1/top.vds
+# Journal file: D:/8190884/lab3_plis/project_2_plis.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4972 
+WARNING: [Synth 8-6901] identifier 'STATE_START_MENU' is used before its declaration [D:/8190884/lab3_plis/rtl/top.v:62]
+WARNING: [Synth 8-6901] identifier 'STATE_START_MENU' is used before its declaration [D:/8190884/lab3_plis/rtl/top.v:63]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 820.770 ; gain = 240.613
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/8190884/lab3_plis/rtl/top.v:23]
+	Parameter speed bound to: 1 - type: integer 
+	Parameter newclkc bound to: 10000005 - type: integer 
+	Parameter std_score bound to: 5 - type: integer 
+	Parameter error_str_count bound to: 10000000 - type: integer 
+	Parameter STATE_START_MENU bound to: 0 - type: integer 
+	Parameter STATE_GAME bound to: 1 - type: integer 
+	Parameter STATE_ERROR bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/8190884/lab3_plis/rtl/top.v:136]
+WARNING: [Synth 8-6090] variable 'cnt1' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/8190884/lab3_plis/rtl/top.v:189]
+WARNING: [Synth 8-6090] variable 'cnt2' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/8190884/lab3_plis/rtl/top.v:192]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/8190884/lab3_plis/rtl/top.v:311]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/8190884/lab3_plis/rtl/top.v:319]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/8190884/lab3_plis/rtl/top.v:330]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [D:/8190884/lab3_plis/rtl/decoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (1#1) [D:/8190884/lab3_plis/rtl/decoder.v:1]
+WARNING: [Synth 8-6014] Unused sequential element prescale_an_reg was removed.  [D:/8190884/lab3_plis/rtl/top.v:255]
+INFO: [Synth 8-6155] done synthesizing module 'top' (2#1) [D:/8190884/lab3_plis/rtl/top.v:23]
+WARNING: [Synth 8-3917] design top has port DP driven by constant 1
+WARNING: [Synth 8-3331] design top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design top has unconnected port SW[12]
+WARNING: [Synth 8-3331] design top has unconnected port SW[11]
+WARNING: [Synth 8-3331] design top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design top has unconnected port BTN[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 862.215 ; gain = 282.059
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 880.078 ; gain = 299.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 880.078 ; gain = 299.922
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 880.078 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/8190884/lab3_plis/xdc/nexusA7.xdc]
+Finished Parsing XDC File [D:/8190884/lab3_plis/xdc/nexusA7.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/8190884/lab3_plis/xdc/nexusA7.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 998.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 998.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 998.277 ; gain = 418.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 998.277 ; gain = 418.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 998.277 ; gain = 418.121
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/8190884/lab3_plis/rtl/top.v:127]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextstate_reg' [D:/8190884/lab3_plis/rtl/top.v:139]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextstate_reg' [D:/8190884/lab3_plis/rtl/top.v:139]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        STATE_START_MENU |                              001 |                               00
+             STATE_ERROR |                              010 |                               10
+              STATE_GAME |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'top'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_nextstate_reg' [D:/8190884/lab3_plis/rtl/top.v:139]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 998.277 ; gain = 418.121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 7     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   8 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 7     
+	   6 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port DP driven by constant 1
+WARNING: [Synth 8-3331] design top has unconnected port SW[14]
+WARNING: [Synth 8-3331] design top has unconnected port SW[13]
+WARNING: [Synth 8-3331] design top has unconnected port SW[12]
+WARNING: [Synth 8-3331] design top has unconnected port SW[11]
+WARNING: [Synth 8-3331] design top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design top has unconnected port SW[6]
+WARNING: [Synth 8-3331] design top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design top has unconnected port BTN[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\flag_right_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\flag_left_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\delay_isearlier_reg[1] )
+INFO: [Synth 8-3886] merging instance 'delay_isearlier_reg[0]' (FDR) to 'delay_isearlier_reg[1]'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin isearlier_reg with 1st driver pin 'isearlier_reg/Q' [D:/8190884/lab3_plis/rtl/top.v:212]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin isearlier_reg with 2nd driver pin 'GND' [D:/8190884/lab3_plis/rtl/top.v:212]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net isearlier_reg is connected to at least one constant driver which has been preserved, other driver is ignored [D:/8190884/lab3_plis/rtl/top.v:212]
+INFO: [Synth 8-3886] merging instance 'i_2/prescale_reg[25]' (FDC) to 'i_2/prescale_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_2/prescale_reg[27]' (FDC) to 'i_2/prescale_reg[26]'
+INFO: [Synth 8-3886] merging instance 'i_2/prescale_reg[28]' (FDC) to 'i_2/prescale_reg[26]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2/\prescale_reg[26] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 998.277 ; gain = 418.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|decoder     | y          | 32x7          | LUT            | 
+|top         | dc/y       | 32x7          | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 998.277 ; gain = 418.121
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1068.039 ; gain = 487.883
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    17|
+|3     |LUT1   |     5|
+|4     |LUT2   |    40|
+|5     |LUT3   |    24|
+|6     |LUT4   |    50|
+|7     |LUT5   |    46|
+|8     |LUT6   |    57|
+|9     |FDCE   |    36|
+|10    |FDPE   |     7|
+|11    |FDRE   |    85|
+|12    |FDSE   |     2|
+|13    |LD     |     3|
+|14    |IBUF   |     8|
+|15    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   413|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1069.047 ; gain = 488.891
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 1069.047 ; gain = 370.691
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1069.047 ; gain = 488.891
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1080.926 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1080.926 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  LD => LDCE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 40 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1080.926 ; gain = 779.109
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1080.926 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/8190884/lab3_plis/project_2_plis.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  7 11:53:04 2021...

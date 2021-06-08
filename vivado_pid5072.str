@@ -1,0 +1,159 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 5072
+License: Customer
+
+Current time: 	Mon May 24 18:45:33 MSK 2021
+Time zone: 	Moscow Standard Time (Europe/Moscow)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Available disk space: 65 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	oxyge
+User home directory: C:/Users/oxyge
+User working directory: D:/Desktop/labs/егор1/lab3_plis
+User country: 	RU
+User language: 	ru
+User locale: 	ru_RU
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2019.2
+RDI_DATADIR: D:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/oxyge/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/oxyge/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/oxyge/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Desktop/labs/егор1/lab3_plis/vivado.log
+Vivado journal file location: 	D:/Desktop/labs/егор1/lab3_plis/vivado.jou
+Engine tmp dir: 	D:/Desktop/labs/егор1/lab3_plis/.Xil/Vivado-5072-DESKTOP-5TMOVFI
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 599 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\Desktop\labs\егор1\lab3_plis\project_2_plis.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/Desktop/labs/егор1/lab3_plis/project_2_plis.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 651 MB. GUI used memory: 53 MB. Current time: 5/24/21, 6:45:35 PM MSK
+// Tcl Message: open_project D:/Desktop/labs/егор1/lab3_plis/project_2_plis.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/8190920/project_2_plis' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 75 MB (+75704kb) [00:00:26]
+// [Engine Memory]: 711 MB (+593832kb) [00:00:26]
+// [GUI Memory]: 91 MB (+12842kb) [00:00:27]
+// [Engine Memory]: 753 MB (+7305kb) [00:00:28]
+// [GUI Memory]: 104 MB (+8898kb) [00:00:30]
+// WARNING: HEventQueue.dispatchEvent() is taking  7759 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:13 . Memory (MB): peak = 789.715 ; gain = 172.906 
+// Project name: project_2_plis; location: D:/Desktop/labs/егор1/lab3_plis; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 818 MB. GUI used memory: 56 MB. Current time: 5/24/21, 6:45:51 PM MSK
+// [Engine Memory]: 818 MB (+28488kb) [00:00:38]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (F, cr) - Node
+// [GUI Memory]: 113 MB (+4365kb) [00:00:42]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 17 seconds
+selectCodeEditor("top.v", 378, 53); // ch (w, cr)
+selectCodeEditor("top.v", 358, 21); // ch (w, cr)
+selectCodeEditor("top.v", 290, 98); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectCodeEditor("top.v", 220, 248); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("top.v", 275, 197); // ch (w, cr)
+selectCodeEditor("top.v", 275, 197, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 31 seconds
+selectCodeEditor("top.v", 732, 71); // ch (w, cr)
+selectCodeEditor("top.v", 741, 73); // ch (w, cr)
+selectCodeEditor("top.v", 715, 72); // ch (w, cr)
+selectCodeEditor("top.v", 1006, 74); // ch (w, cr)
+selectCodeEditor("top.v", 725, 75); // ch (w, cr)
+selectCodeEditor("top.v", 951, 67); // ch (w, cr)
+selectCodeEditor("top.v", 746, 66); // ch (w, cr)
+selectCodeEditor("top.v", 180, 131); // ch (w, cr)
+selectCodeEditor("top.v", 180, 131, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.v", 145, 71); // ch (w, cr)
+selectCodeEditor("top.v", 145, 71, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.v", 140, 173); // ch (w, cr)
+selectCodeEditor("top.v", 140, 173, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.v", 318, 236); // ch (w, cr)
+selectCodeEditor("top.v", 341, 206); // ch (w, cr)
+selectCodeEditor("top.v", 346, 231); // ch (w, cr)
+selectCodeEditor("top.v", 323, 209); // ch (w, cr)
+selectCodeEditor("top.v", 374, 215); // ch (w, cr)
+selectCodeEditor("top.v", 171, 69); // ch (w, cr)
+selectCodeEditor("top.v", 171, 69, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.v", 361, 67); // ch (w, cr)
+selectCodeEditor("top.v", 145, 71); // ch (w, cr)
+selectCodeEditor("top.v", 145, 71, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("top.v", 206, 86); // ch (w, cr)
+selectCodeEditor("top.v", 496, 174); // ch (w, cr)
+selectCodeEditor("top.v", 469, 136); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 478ms to process. Increasing delay to 3000 ms.

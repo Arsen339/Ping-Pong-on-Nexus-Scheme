@@ -1,0 +1,90 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Jun  7 11:53:45 2021
+| Host         : 4328-COMP-11 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    12 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     4 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |            6 |
+| No           | No                    | Yes                    |              25 |            7 |
+| No           | Yes                   | No                     |               2 |            2 |
+| Yes          | No                    | No                     |              21 |            9 |
+| Yes          | No                    | Yes                    |              21 |           11 |
+| Yes          | Yes                   | No                     |              56 |           15 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------+--------------------------+------------------+----------------+
+|  Clock Signal  |       Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count |
++----------------+--------------------------+--------------------------+------------------+----------------+
+|  nextstate__0  |                          |                          |                1 |              3 |
+|  clk_IBUF_BUFG | x[4]_i_1_n_0             |                          |                5 |              5 |
+|  clk_IBUF_BUFG |                          |                          |                5 |              8 |
+|  clk_IBUF_BUFG | cnt1[7]_i_1_n_0          | tic_an[9]_i_3_n_0        |                2 |              8 |
+|  clk_IBUF_BUFG | cnt2[7]_i_1_n_0          | tic_an[9]_i_3_n_0        |                2 |              8 |
+|  clk_IBUF_BUFG | score[7]_i_2_n_0         | score[7]_i_1_n_0         |                3 |              8 |
+|  clk_IBUF_BUFG | tic_an                   | tic_an[9]_i_3_n_0        |                4 |             10 |
+|  clk_IBUF_BUFG | tempAN                   | tic_an[9]_i_3_n_0        |                7 |             11 |
+|  clk_IBUF_BUFG | flag_counter1[0]_i_2_n_0 | flag_counter1[0]_i_1_n_0 |                4 |             16 |
+|  clk_IBUF_BUFG | flag_counter[0]_i_2_n_0  | flag_counter[0]_i_1_n_0  |                4 |             16 |
+|  clk_IBUF_BUFG | tempLED[15]_i_1_n_0      |                          |                4 |             16 |
+|  clk_IBUF_BUFG |                          | tic_an[9]_i_3_n_0        |                9 |             27 |
++----------------+--------------------------+--------------------------+------------------+----------------+
+
+

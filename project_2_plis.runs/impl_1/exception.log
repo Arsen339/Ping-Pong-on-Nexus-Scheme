@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\8190884\lab3_plis\project_2_plis.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Разрешение отклонено

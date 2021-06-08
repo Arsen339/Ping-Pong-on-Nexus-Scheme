@@ -1,0 +1,8 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+D:/8190884/lab3_plis/project_2_plis.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+D:/8190884/lab3_plis/rtl/decoder.v,1621340012,verilog,,D:/8190884/lab3_plis/rtl/top.v,,decoder,,,,,,,,
+D:/8190884/lab3_plis/rtl/top.v,1623047893,verilog,,D:/8190884/lab3_plis/tb/top_tb.v,,top,,,,,,,,
+D:/8190884/lab3_plis/tb/top_tb.v,1618904680,verilog,,,,top_tb,,,,,,,,
